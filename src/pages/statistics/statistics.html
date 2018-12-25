@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar color="DeepSkyBlue" text-center padding>
+    <ion-title>Statistics</ion-title>
+    
+    <ion-buttons right>
+      <button ion-button icon-only>
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  สถิติรายวัน
+  <ion-card>
+    <ion-card-header>
+      จำนวนสินค้า (ขวด)
+    </ion-card-header>
+
+    <ion-card-content>
+      <canvas #barCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+
+  สถิติรายเดือน<br>
+  <ion-card>
+    <ion-card-header>
+      ยอดขายรายเดือน
+    </ion-card-header>
+
+    <ion-card-content>
+      <canvas #doughnutCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+
+  
+</ion-content>
+

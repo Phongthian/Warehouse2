@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar color="DeepSkyBlue" text-center padding>
+    <ion-title>Created Code</ion-title>
+    
+    <ion-buttons right>
+      <button ion-button icon-only>
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <!-- <ion-row>
+    <ion-col padding text-center>
+      <ion-item>
+        <ion-input [(ngModel)]="createdData" type="text" placeholder="Created Code"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row> -->
+
+  <ion-row>
+    <ion-col>
+      <ion-item>
+        <ion-label floating>Create QR Code</ion-label>
+        <ion-input [(ngModel)]="encodeData" type="text"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <div padding text-center>
+    <button ion-button (click)="onCreatedQR()" full>
+      Created QR
+    </button>
+  </div>
+
+  <!-- <ion-buttons end>
+    <button ion-button (click)="onSavePhotoToGallery()" color="secondary">
+      SAVE GALLERY
+    </button>
+  </ion-buttons> -->
+
+  <!-- <ion-card *ngIf="createdCode">
+    <ngx-qrcode [qrc-value]="createdCode"></ngx-qrcode>
+    <ion-card-content padding text-center>
+      <p>value: {{ createdCode }}</p>
+    </ion-card-content>
+  </ion-card> -->
+
+</ion-content>
+
+
